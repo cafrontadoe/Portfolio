@@ -9,6 +9,8 @@ import {
   DiPython,
   DiGit,
   DiJava,
+  DiAngularSimple,
+  DiAws
 } from "react-icons/di";
 import {
   SiRedis,
@@ -23,13 +25,14 @@ function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <DiJava />
+        
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <DiAngularSimple />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
@@ -38,7 +41,7 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
@@ -53,7 +56,7 @@ function Techstack() {
         <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <DiAws />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
@@ -62,7 +65,7 @@ function Techstack() {
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <CgCPlusPlus />
       </Col>
     </Row>
   );
