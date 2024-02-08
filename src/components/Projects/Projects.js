@@ -34,7 +34,7 @@ function Projects() {
             <ProjectCard
               imgPath={plenitude}
               isBlog={false}
-              title="Bits-0f-C0de"
+              title="Plenitude"
               description="Plenitude Site is a portal web that helps residents and visitors of madeira to know about the church, it's build in Angular 15 and backend in Node JS, integrate with Stripe for donations."
               ghLink="https://github.com/cafrontadoe/plenitude-site"
               demoLink="https://www.plenitudefunchal.com/"
