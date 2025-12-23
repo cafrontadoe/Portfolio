@@ -692,6 +692,12 @@ button:focus {
     height: 395px;
   }
 }
+
+@media (max-width: 575px) { 
+  .img-fluid-home1 {
+    height: 420px !important;
+  }
+}
 /* --------- */
 /* Resume */
 /* --------- */
