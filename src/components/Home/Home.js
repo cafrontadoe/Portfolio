@@ -30,12 +30,11 @@ function Home() {
               </div>
             </Col>
 
-            <Col md={6} style={{ paddingBottom: 20 }}>
+            <Col className="home-container" md={6} style={{ paddingBottom: 20 }}>
               <img
                 src={camiloImage}
                 alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                className="img-fluid-home1"
               />
             </Col>
           </Row>

@@ -1,3 +1,13 @@
+:root {
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --color-text-title: #0f172a;
+  --color-text: #f9c16a;
+  --muted: #64748b;
+  --primary: #4f46e5;
+}
+
+
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -14,8 +24,8 @@ html {
   --imp-text-color: #c770f0;
 }
 
-.purple {
-  color: var(--imp-text-color) !important;
+.color-text {
+  color: var(--color-text) !important;
 }
 
 button:focus {
@@ -62,13 +72,13 @@ button:focus {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(216, 180, 121, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(235, 205, 130, 0.911);
   border-radius: 12px;
 }
 
@@ -76,9 +86,9 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: #2e271aa9 !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
+  box-shadow: 0px 10px 10px 0px rgba(29, 19, 5, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -97,7 +107,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: var(--color-text) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -194,7 +204,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #f9c16a;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -254,10 +264,15 @@ button:focus {
   padding-top: 80px !important;
 }
 
+.home-container-photo {
+  
+}
+
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  background-image:  url(./Assets/home-bg.jpg);
+
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -281,17 +296,19 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  background: linear-gradient(to bottom, #f9a206, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: #f9c16a !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: #f9c16a !important;
 }
 
 @media (max-width: 767px) {
@@ -334,6 +351,16 @@ button:focus {
   padding-top: 50px;
   font-size: 1.2em !important;
   text-align: left;
+}
+
+.img-fluid-home1 {
+   height: 773px !important; 
+}
+
+.img-fluid-home2 {
+  width: 377px;
+  height: 470px;
+  border-radius: 50%;
 }
 
 .home-about-social {
@@ -460,7 +487,7 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
+  box-shadow: 0 4px 5px 3px rgb(80 136 53 / 46%) !important;
   color: white !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -470,7 +497,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px rgb(144 140 72 / 56%)!important;
 }
 
 .blog-card {
@@ -518,13 +545,13 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
+  background-color: #464646 !important;
   border-color: #623686 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
+  background-color: #a59962d7 !important;
   border-color: #6d20c5d7 !important;
 }
 .btn:focus {
@@ -551,18 +578,35 @@ button:focus {
 }
 
 .tech-icons {
-  font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
-  opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-  border-radius: 5px !important;
-  display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
-  overflow: hidden !important;
-  transition: all 0.4s ease 0s !important;
+  font-size: 4.5em;
+  margin: 15px;
+  padding: 10px;
+  opacity: 0.93;
+  border: 1.7px solid rgb(230 195 137 / 64%);
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 5px;
+  display: table;
+  box-shadow: 4px 5px 4px 3px rgb(47 168 4 / 14%);
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.tech-icons:hover {
+  transform: scale(1.05);
+  animation: hoverColor 1.8s ease-in-out infinite;
+}
+
+@keyframes hoverColor {
+  0% {
+    background-color: rgb(186 180 38 / 33%);
+  }
+  50% {
+    background-color: rgba(216, 191, 92, 0.4); 
+  }
+  100% {
+    background-color: rgb(186 180 38 / 33%);
+  }
 }
 
 @media (max-width: 767px) {
@@ -571,11 +615,9 @@ button:focus {
   }
 }
 
-.tech-icons:hover {
-  transform: scale(1.05) !important;
-  overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-}
+
+
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -593,9 +635,61 @@ button:focus {
   padding-left: 1px !important;
 }
 
+.image-stack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px; /* vertical spacing */
+
+}
+
+/* .image-stack img {
+  width: 100%;
+  object-fit: cover;
+} */
+
+.drop {
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: dropDown 0.6s ease-out forwards;
+}
+
+/* Stagger the animation */
+.drop-1 {
+  animation-delay: 0.3s;
+}
+
+.drop-2 {
+  animation-delay: 0.9s;
+}
+
+.drop-3 {
+  animation-delay: 1.5s;
+}
+
+.drop-4 {
+  animation-delay: 2s;
+}
+
+@keyframes dropDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 767px) {
   .about-img {
     padding-top: 0 !important;
+  }
+
+  .img-fluid-home1 {
+    height: 468px !important;
+  }
+
+  .img-fluid-home2 {
+    width: 345px;
+    height: 395px;
   }
 }
 /* --------- */
@@ -727,7 +821,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #ffcf2c5e !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -735,9 +829,11 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #efbc0d86 !important;
+  border-color: #fff !important;
 }
+
+
 .fork-btn-inner::after {
   display: none !important;
 }

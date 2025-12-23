@@ -10,7 +10,8 @@ import {
   DiGit,
   DiJava,
   DiAngularSimple,
-  DiAws
+  DiAws,
+  DiDjango
 } from "react-icons/di";
 import {
   SiRedis,
@@ -18,6 +19,7 @@ import {
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
+  SiTypescript,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -62,10 +64,10 @@ function Techstack() {
         <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <DiDjango />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+      <Col xs={4} md={2} className="tech-icons" about="C++">
+        <SiTypescript />
       </Col>
     </Row>
   );

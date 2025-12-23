@@ -10,12 +10,32 @@ import {
   SiSonarqube,
   SiConfluence,
   SiJira,
-  SiAwslambda
+  SiAwslambda,
+  SiJenkins,
+  SiGooglecolab,
+  SiAnaconda,
+  SiDocker,
+  SiKubernetes
 } from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecolab />
+      </Col> 
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAnaconda />
+        </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJenkins />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKubernetes />
+      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiIntellijidea />
       </Col>

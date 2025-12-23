@@ -8,19 +8,32 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Camilo Frontado </span>
-            from <span className="purple"> Colombia.</span>
+            Hi everyone, I’m <span className="color-text">Camilo Frontado</span>{" "}
             <br />
-            I am Telematics Engineer.
-            <br />
-            I'm studing a Master in Artificial Intelligence in Universitat de Catalunya
+            I’m a <span className="color-text">
+              Senior Software Engineer
+            </span>{" "}
+            with a strong focus on{" "}
+            <span className="color-text">Artificial Intelligence</span> and
+            <span className="color-text"> Full-Stack Development</span>.
+            <br />I specialize in building{" "}
+            <span className="color-text">
+              scalable, production-ready systems
+            </span>{" "}
+            that integrate{" "}
+            <span className="color-text">
+              LLMs, Retrieval-Augmented Generation (RAG),
+            </span>{" "}
+            and cloud-based AI solutions on{" "}
+            <span className="color-text">AWS</span>.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
+
           <ul>
             <li className="about-activity">
-              <ImPointRight />Entrepreneurship 
+              <ImPointRight /> Entrepreneurship
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling
@@ -30,10 +43,10 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          <p style={{ color: "#a59b4b" }}>
+            "Strive to build things that make a difference!"
           </p>
-          <footer className="blockquote-footer">Camilo</footer>
+        
         </blockquote>
       </Card.Body>
     </Card>
