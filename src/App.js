@@ -119,7 +119,9 @@ return (
         handleNewUserMessage={handleNewUserMessage}
         title="👋 Let’s Connect!"
         subtitle="Ready to Collaborate"
+        className="flex-1 min-h-0 overflow-y-auto"
       />
+      
       <Footer />
     </div>
   </Router>
