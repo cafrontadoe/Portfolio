@@ -26,7 +26,6 @@ function App() {
   const typingIntervalRef = useRef(null);
 
   const bearerToken = process.env.REACT_APP_TOKEN;
-  const n8nWebhook = process.env.WEBHOOK;
 
   const sessionId = crypto.randomUUID();
 
@@ -52,7 +51,7 @@ function App() {
       addResponseMessage('💬 ...');
   // startTypingAnimation();  
     const response = await fetch(
-      `${n8nWebhook}`,
+      "https://n8n.camilo-frontado.dev/webhook/ai-agent",
       {
         method: "POST",
         headers: {
