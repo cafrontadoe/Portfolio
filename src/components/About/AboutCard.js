@@ -10,22 +10,28 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi everyone, I’m <span className="color-text">Camilo Frontado</span>{" "}
             <br />
-            I’m a <span className="color-text">
-              Senior Software Engineer
-            </span>{" "}
-            with a strong focus on{" "}
-            <span className="color-text">Artificial Intelligence</span> and
-            <span className="color-text"> Full-Stack Development</span>.
-            <br />I specialize in building{" "}
+            I’m a{" "}
             <span className="color-text">
-              scalable, production-ready systems
+              Senior Full-Stack Engineer & AI/ML Specialist
             </span>{" "}
-            that integrate{" "}
+            currently working as{" "}
+            <span className="color-text">AI System Architect at Manoa Tech</span>,
+            with a{" "}
             <span className="color-text">
-              LLMs, Retrieval-Augmented Generation (RAG),
+              Master’s in Artificial Intelligence from Universitat Politècnica
+              de Catalunya
+            </span>
+            .
+            <br />I design and ship{" "}
+            <span className="color-text">
+              scalable, production-ready AI systems
             </span>{" "}
-            and cloud-based AI solutions on{" "}
-            <span className="color-text">AWS</span>.
+            powered by{" "}
+            <span className="color-text">
+              Agentic AI, LLMs, Retrieval-Augmented Generation (RAG),
+            </span>{" "}
+            and cloud platforms like{" "}
+            <span className="color-text">AWS &amp; Azure</span>.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!

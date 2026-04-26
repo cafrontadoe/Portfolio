@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgCB" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a0b1f"/>
+      <stop offset="50%" stop-color="#3b1c3a"/>
+      <stop offset="100%" stop-color="#5b2333"/>
+    </linearGradient>
+    <linearGradient id="accentCB" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f9a8d4"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+    <linearGradient id="bubbleUser" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9a8d4" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="bubbleBot" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.06"/>
+    </linearGradient>
+    <filter id="glowCB" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#bgCB)"/>
+
+  <g opacity="0.18" stroke="url(#accentCB)" stroke-width="1" fill="none">
+    <circle cx="500" cy="60" r="80"/>
+    <circle cx="500" cy="60" r="50"/>
+    <circle cx="80" cy="320" r="70"/>
+    <circle cx="80" cy="320" r="40"/>
+  </g>
+
+  <g transform="translate(36 36)" filter="url(#glowCB)">
+    <circle cx="22" cy="22" r="20" fill="none" stroke="url(#accentCB)" stroke-width="2"/>
+    <path d="M22 10 L24 18 L32 18 L26 23 L28 31 L22 26 L16 31 L18 23 L12 18 L20 18 Z" fill="url(#accentCB)"/>
+  </g>
+  <g transform="translate(82 50)" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+    <text x="0" y="0" fill="#ffffff" font-size="22" font-weight="700">Clinical Beauty</text>
+    <text x="0" y="20" fill="#fcd34d" font-size="13" font-weight="500" letter-spacing="1">AGENTIC AI ASSISTANT</text>
+  </g>
+
+  <g transform="translate(36 110)" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+    <rect x="0" y="0" width="290" height="38" rx="19" fill="url(#bubbleUser)"/>
+    <text x="18" y="24" fill="#3b0a1f" font-size="13" font-weight="600">Hola, ¿tienes hueco mañana 4pm?</text>
+
+    <rect x="48" y="50" width="320" height="38" rx="19" fill="url(#bubbleBot)" stroke="url(#accentCB)" stroke-width="1"/>
+    <text x="66" y="74" fill="#ffffff" font-size="13" font-weight="500">Sí ✨ te agendé limpieza facial — 4:00pm.</text>
+
+    <rect x="0" y="100" width="180" height="38" rx="19" fill="url(#bubbleUser)"/>
+    <text x="18" y="124" fill="#3b0a1f" font-size="13" font-weight="600">Perfecto, gracias 💕</text>
+
+    <rect x="48" y="150" width="280" height="38" rx="19" fill="url(#bubbleBot)" stroke="url(#accentCB)" stroke-width="1"/>
+    <text x="66" y="174" fill="#ffffff" font-size="13" font-weight="500">Te envío recordatorio por Gmail 📩</text>
+
+    <g transform="translate(64 196)">
+      <circle cx="0" cy="0" r="3" fill="#fcd34d">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="10" cy="0" r="3" fill="#fcd34d" opacity="0.6"/>
+      <circle cx="20" cy="0" r="3" fill="#fcd34d" opacity="0.4"/>
+    </g>
+  </g>
+
+  <g transform="translate(400 110)" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="11" fill="#fde68a" font-weight="600">
+    <text x="0" y="0" fill="#fcd34d" font-size="11" letter-spacing="1.5">STACK</text>
+
+    <g transform="translate(0 16)">
+      <rect x="0" y="0" width="160" height="26" rx="13" fill="#ffffff14" stroke="url(#accentCB)" stroke-width="1"/>
+      <circle cx="14" cy="13" r="5" fill="#ea4b71"/>
+      <text x="26" y="17" fill="#ffffff">N8N · Multi-agent</text>
+    </g>
+
+    <g transform="translate(0 50)">
+      <rect x="0" y="0" width="160" height="26" rx="13" fill="#ffffff14" stroke="url(#accentCB)" stroke-width="1"/>
+      <circle cx="14" cy="13" r="5" fill="#a78bfa"/>
+      <text x="26" y="17" fill="#ffffff">MCP Protocol</text>
+    </g>
+
+    <g transform="translate(0 84)">
+      <rect x="0" y="0" width="160" height="26" rx="13" fill="#ffffff14" stroke="url(#accentCB)" stroke-width="1"/>
+      <circle cx="14" cy="13" r="5" fill="#22d3ee"/>
+      <text x="26" y="17" fill="#ffffff">RAG · Clinical KB</text>
+    </g>
+
+    <g transform="translate(0 118)">
+      <rect x="0" y="0" width="160" height="26" rx="13" fill="#ffffff14" stroke="url(#accentCB)" stroke-width="1"/>
+      <circle cx="14" cy="13" r="5" fill="#34d399"/>
+      <text x="26" y="17" fill="#ffffff">Calendar + Gmail</text>
+    </g>
+  </g>
+
+  <g transform="translate(36 308)" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+    <rect x="0" y="0" width="528" height="36" rx="18" fill="url(#accentCB)" opacity="0.15" stroke="url(#accentCB)" stroke-width="1"/>
+    <text x="20" y="23" fill="#fcd34d" font-size="13" font-weight="700">⚡ Saved 6 hours/week of manual client communication</text>
+    <text x="395" y="23" fill="#ffffff" font-size="11" font-weight="500" opacity="0.85">PRODUCTION · LIVE</text>
+  </g>
+</svg>

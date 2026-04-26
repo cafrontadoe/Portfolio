@@ -19,58 +19,51 @@ function Home2() {
               LET ME <span className="color-text"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a software engineer who transitioned into Artificial
-              Intelligence, driven by a passion for building intelligent,
-              scalable, and real-world products 🚀
+              I’m a Senior Software Engineer with 10+ years of experience who
+              expanded into Artificial Intelligence, holding a&nbsp;
+              <i>
+                <b className="color-text">
+                  Master’s in Artificial Intelligence from Universitat
+                  Politècnica de Catalunya
+                </b>
+              </i>
+              &nbsp;and shipping production AI systems for real customers 🚀
               <br />
               <br />I specialize in
               <i>
                 <b className="color-text">
-                &nbsp;Artificial Intelligence, Data Science, and Full-Stack
-                  Development
+                &nbsp;Agentic AI, Large Language Models (LLMs), Retrieval-Augmented
+                  Generation (RAG), and LLMOps
                 </b>
               </i>
-              , with a strong focus on
+              , architecting end-to-end solutions on
               <i>
-                <b className="color-text">
-                &nbsp;Large Language Models (LLM), Retrieval-Augmented Generation
-                  (RAG), and LLMOps 
-                </b>
-              </i>
-              &nbsp;on
-              <i>
-                <b className="color-text"> AWS</b>
+                <b className="color-text"> AWS and Azure</b>
               </i>
               .
               <br />
               <br />
-              My main stack includes
+              My AI stack includes
               <i>
                 <b className="color-text">
-                &nbsp;Python (Machine Learning, NLP, Model Evaluation), TensorFlow,
-                  PyTorch, and Scikit-Learn
+                &nbsp;Python, TensorFlow, PyTorch, Scikit-Learn, LangChain, n8n,
+                  and the MCP protocol
                 </b>
               </i>
-              , combined with solid experience in
+              , combined with deep
               <i>
                 <b className="color-text">
-                &nbsp;data engineering, feature pipelines, and cloud-based ML
-                  workflows
+                &nbsp;Full-Stack expertise
                 </b>
               </i>
-              .
-              <br />
-              <br />I also bring strong
-              <i>
-                <b className="color-text">&nbsp;Full-Stack expertise</b>
-              </i>
-              , building production-ready applications with
+              &nbsp;in
               <i>
                 <b className="color-text">
-                &nbsp; Angular, React, Next.js, Node.js, Java (Spring),
+                &nbsp;Java (Spring Boot, Quarkus), Node.js, Angular, React, and
+                  Next.js
                 </b>
               </i>
-              &nbsp; and modern DevOps practices, turning AI models into
+              &nbsp;— turning AI models into
               <i>
                 <b className="color-text"> real, deployable products</b>
               </i>

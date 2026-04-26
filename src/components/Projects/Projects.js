@@ -5,7 +5,8 @@ import Particle from "../Particle";
 import cvu from "../../Assets/Projects/cvu.PNG";
 import plenitude from "../../Assets/Projects/plenitude.PNG";
 import fitabsolutepro from "../../Assets/Projects/fitabsolutepro.PNG";
-import chat from "../../Assets/Projects/chatAssistant.PNG";
+import chat from "../../Assets/Projects/clinical-beauty.svg";
+import translate from "../../Assets/Projects/translateme2text.svg";
 
 function Projects() {
   return (
@@ -21,10 +22,32 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={translate}
+              isBlog={false}
+              title="TranslateMe2Text — Real-Time Translation SaaS"
+              description="Live SaaS product I architected end-to-end at Manoa Tech: real-time audio transcription &amp; translation with ~400ms latency, 90% voice recognition accuracy, and 2+ simultaneous languages with zero install. Built on React, Node.js, Python, Redis, DeepGram &amp; DeepL — deployed on Docker + Kubernetes. Serving churches, conferences and multilingual events (€9–€129/month tiers)."
+              ghLink="https://www.manoalda.com/products"
+              demoLink="https://translate.manoalda.com/demo"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={chat}
+              isBlog={false}
+              title="Clinical Beauty — Agentic AI Assistant"
+              description="Multi-agent AI workflow built with N8N + MCP protocol, integrating Google Calendar &amp; Gmail to fully automate client scheduling and appointment reminders. RAG pipeline enables intelligent retrieval of clinical services info. Reduced manual client communication by 6 hours/week. End-to-end deployment: server provisioning, Docker, DNS &amp; production rollout."
+              ghLink="https://www.manoalda.com/"
+              demoLink="https://www.manoalda.com/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={fitabsolutepro}
               isBlog={false}
               title="FitAbsolutePro"
-              description="FitAbsolute Pro is an ecommerce build in React, Next Js, using bakend in node JS Express, Redis and PostgreSQL."
+              description="Full-stack e-commerce built with React, Next.js, Node.js (Express), Redis and PostgreSQL."
               ghLink="https://github.com/cafrontadoe/fitabsoluteprofront"
               demoLink="https://fitabsoluteprofront-cafrontadoe.vercel.app/"
             />
@@ -35,7 +58,7 @@ function Projects() {
               imgPath={plenitude}
               isBlog={false}
               title="Plenitude"
-              description="Plenitude Site is a portal web that helps residents and visitors of madeira to know about the church, it's build in Angular 15 and backend in Node JS, integrate with Stripe for donations."
+              description="Web portal helping residents and visitors of Madeira learn about the church. Built in Angular 15 with a Node.js backend, integrated with Stripe for donations."
               ghLink="https://github.com/cafrontadoe/plenitude-site"
               demoLink="https://www.plenitudefunchal.com/"
             />
@@ -45,23 +68,12 @@ function Projects() {
             <ProjectCard
               imgPath={cvu}
               isBlog={false}
-              title="CVU"
-              description="CVU Portal Web is a portal for a travel agency when they offer all their plans, clients can make a registration and start doing payments programmatically. It's build with Angular 12, Liferay and Java 8."
+              title="CVU — Travel Agency Portal"
+              description="Web portal for a travel agency offering vacation plans with recurring online payments (PSE gateway), replacing a manual door-to-door cash collection process. Built with Angular 12, Liferay 7.1 and Java 8."
               ghLink="https://github.com/"
-              demoLink="https://www.cvu.com.co/home"              
+              demoLink="https://www.cvu.com.co/home"
             />
           </Col>
-
-          {/* <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={chat}
-              isBlog={false}
-              title="Chat with GPT"
-              description="It's a template chat Connected with GPT Assistant with Node SDK, it is build with Angular 16 in Frontend and Node JS Express in Backend"
-              ghLink="https://github.com/cafrontadoe/assistantBack"
-              demoLink="https://github.com/cafrontadoe/assistantBack"
-            />
-          </Col> */}
 
         </Row>
       </Container>

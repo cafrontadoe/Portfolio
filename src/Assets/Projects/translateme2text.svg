@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="600" height="360" fill="url(#bg)"/>
+
+  <g opacity="0.35" stroke="url(#accent)" stroke-width="1.2" fill="none">
+    <path d="M0 90 Q150 40 300 90 T600 90"/>
+    <path d="M0 130 Q150 80 300 130 T600 130"/>
+    <path d="M0 170 Q150 120 300 170 T600 170"/>
+  </g>
+
+  <g transform="translate(60 130)" filter="url(#glow)">
+    <circle cx="40" cy="40" r="38" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
+    <rect x="30" y="18" width="20" height="34" rx="10" fill="url(#accent)"/>
+    <path d="M22 44 a18 18 0 0 0 36 0" fill="none" stroke="url(#accent)" stroke-width="2.5"/>
+    <line x1="40" y1="62" x2="40" y2="74" stroke="url(#accent)" stroke-width="2.5"/>
+    <line x1="28" y1="74" x2="52" y2="74" stroke="url(#accent)" stroke-width="2.5"/>
+  </g>
+
+  <g transform="translate(180 145)" font-family="-apple-system, Segoe UI, Roboto, sans-serif">
+    <text x="0" y="0" fill="#ffffff" font-size="34" font-weight="700">TranslateMe2Text</text>
+    <text x="0" y="32" fill="#cbd5e1" font-size="16" font-weight="500">Real-Time Translation Platform</text>
+    <g transform="translate(0 56)" font-size="13" fill="url(#accent)" font-weight="600">
+      <text x="0" y="0">EN</text>
+      <text x="36" y="0" fill="#94a3b8">→</text>
+      <text x="58" y="0">ES</text>
+      <text x="92" y="0" fill="#94a3b8">→</text>
+      <text x="114" y="0">PT</text>
+      <text x="146" y="0" fill="#94a3b8">→</text>
+      <text x="168" y="0">DE</text>
+    </g>
+  </g>
+
+  <g transform="translate(60 260)" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="13" fill="#e2e8f0">
+    <rect x="-10" y="-22" width="118" height="32" rx="16" fill="#ffffff14" stroke="url(#accent)" stroke-width="1"/>
+    <text x="0" y="0" font-weight="600">~400ms latency</text>
+    <rect x="120" y="-22" width="120" height="32" rx="16" fill="#ffffff14" stroke="url(#accent)" stroke-width="1"/>
+    <text x="130" y="0" font-weight="600">90% accuracy</text>
+    <rect x="250" y="-22" width="118" height="32" rx="16" fill="#ffffff14" stroke="url(#accent)" stroke-width="1"/>
+    <text x="260" y="0" font-weight="600">2+ languages</text>
+    <rect x="380" y="-22" width="120" height="32" rx="16" fill="#ffffff14" stroke="url(#accent)" stroke-width="1"/>
+    <text x="390" y="0" font-weight="600">Zero install</text>
+  </g>
+</svg>
